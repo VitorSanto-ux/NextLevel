@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="">Cadastrar Evento</a></li>
                 <li><a href="">Cadastrar Participantes</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
     </div>
