@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-      <img src="public/assets/img/logo_nextlevel.png" alt="">
+      <img src="./assets/img/logo_nextlevel.png" alt="">
     </div>
 
     <div>
@@ -20,6 +20,15 @@
                 <li><a href="">Sobre</a></li>
             </ul>
         </nav>
+    </div>
+
+    <div>
+        <div>
+            <h1>Bem-vindo ao app da empressa: Next Level</h1>
+            <p>
+                O aplicativo foi desenvolvido para que os usuários possam se cadastrar e obter informações claras sobre cada evento e sua finalidade. Esperamos que a plataforma proporcione uma experiência útil e satisfatória para todos.
+            </p>
+        </div>
     </div>
 </body>
 </html>
