@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início</title>
 </head>
+
 <body>
     <div>
-      <img src="./assets/img/logo_nextlevel-removebg-preview.png" alt="">
+        <img src="./assets/img/logo_nextlevel-removebg-preview.png" alt="">
     </div>
 
     <div>
@@ -16,8 +18,9 @@
         <nav>
             <ul>
                 <li><a href="">Cadastrar Evento</a></li>
-                <li><a href="">Cadastrar Participantes</a></li>
+                <li><a href="/NextLevel/Views/participantes.php">Cadastrar Participantes</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="/NextLevel/Views/listar.php">Lista de participantes</a></li>
             </ul>
         </nav>
     </div>
@@ -32,4 +35,5 @@
         <img src="./assets/img/eventos.png" alt="">
     </div>
 </body>
+
 </html>
