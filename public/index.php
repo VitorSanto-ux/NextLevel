@@ -7,7 +7,7 @@
 </head>
 <body>
     <div>
-      <img src="./assets/img/logo_nextlevel.png" alt="">
+      <img src="./assets/img/logo_nextlevel-removebg-preview.png" alt="">
     </div>
 
     <div>
@@ -29,6 +29,7 @@
                 O aplicativo foi desenvolvido para que os usuários possam se cadastrar e obter informações claras sobre cada evento e sua finalidade. Esperamos que a plataforma proporcione uma experiência útil e satisfatória para todos.
             </p>
         </div>
+        <img src="./assets/img/eventos.png" alt="">
     </div>
 </body>
 </html>
