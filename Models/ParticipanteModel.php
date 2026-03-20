@@ -31,7 +31,8 @@ class ParticipanteModel {
     return $stmt->execute([
         ':nome' => $nome,
         ':email' => $email,
-        ':telefone' => $telefone
+        ':telefone' => $telefone,
+
     ]);
     }
 

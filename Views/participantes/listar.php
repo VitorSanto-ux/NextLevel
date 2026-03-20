@@ -47,7 +47,6 @@ if (empty($participantes)) {
             onclick=\"return confirm('Tem certeza que deseja excluir esse participante?')\">Deletar</a> |
         <a href='participantes.php' class='btn-cadastrar'>Cadastrar</a>
     </td>";
-
         echo "</tr>";
     }
 

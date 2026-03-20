@@ -8,6 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nome = $_POST['nome'];
     $email = $_POST['email'];
     $telefone = $_POST['telefone'];
+  
 
     $participanteController->cadastrar($nome, $email, $telefone);
 
@@ -36,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <label>Telefone:</label><br>
         <input type="text" name="telefone" required><br><br>
-
         <button type="submit">Cadastrar</button><br><br>
         <a href="C:/Turma2/xampp/htdocs/NextLevel/public/index.php"><button>Voltar</button></a>
         

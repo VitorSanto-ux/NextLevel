@@ -20,7 +20,7 @@ class ParticipanteController{
         
     }
 
-    public function cadastrar($nome, $email, $telefone){
+    public function cadastrar($nome, $email, $telefone ){
         return $this->participantesModel->cadastrar($nome, $email, $telefone);
     }
 

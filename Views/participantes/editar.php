@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['telefone']
     );
 
-    header("Location: index.php");
+    header("Location: ../public/index.php");
     exit;
 }
 ?>
@@ -42,5 +42,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <input type="text" name="telefone" value="<?= $participante['telefone'] ?>"><br><br>
 
     <button type="submit">Atualizar</button>
-    <a href="index.php" class="btn-voltar">Voltar</a>
+    <a href="../public/index.php" class="btn-voltar">Voltar</a>
 </form>

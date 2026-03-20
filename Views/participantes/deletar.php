@@ -13,5 +13,5 @@ if(!$id){
 
 $participanteController->deletar($id);
 
-header("Location: index.php");
+header("Location: ../public/index.php");
 ?>
