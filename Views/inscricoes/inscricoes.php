@@ -24,13 +24,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Inscrições</title>
+    <link rel="stylesheet" href="styleinscricoes.css">
 </head>
 <body>
 
-<h1>Cadastrar Inscrições</h1>
+<section id="inscricoes">
+    <h1>Cadastrar Inscrições</h1>
 
-<form method="POST">
+    <form method="POST">
 
     <label>Evento:</label><br>
     <select name="evento_id" required>
@@ -50,11 +53,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <?php endforeach; ?>
     </select><br><br>
 
-    <button type="submit">Cadastrar</button><br><br>
+    <button type="submit">Cadastrar</button>
+    <a href="/NextLevel/public/index.php"><button type="button">Voltar</button></a>
 
-    <a href="/NextLevel/public/index.php">Voltar</a>
-
-</form>
+    </form>
+</section>
 
 </body>
 </html>

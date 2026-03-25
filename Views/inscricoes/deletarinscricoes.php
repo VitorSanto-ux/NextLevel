@@ -13,5 +13,5 @@ if(!$id){
 
 $inscricaoController->deletar($id);
 
-header("Location: ../public/index.php");
+header("Location: /NextLevel/public/index.php");
 ?>

@@ -12,8 +12,8 @@ body {
     padding: 20px;
 }
 
-/* ===== SEÇÃO DE EVENTOS ===== */
-#eventos {
+/* ===== SEÇÃO DE PARTICIPANTES ===== */
+#participantes {
     max-width: 1000px;
     margin: 0 auto;
     background-color: white;
@@ -22,7 +22,7 @@ body {
     padding: 30px;
 }
 
-#eventos h1 {
+#participantes h1 {
     color: #333;
     margin-bottom: 30px;
     text-align: center;
@@ -101,7 +101,7 @@ form a button:hover {
 }
 
 /* ===== TABELA ===== */
-.tabela-usuario {
+.tabela-usuarios {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
@@ -110,12 +110,12 @@ form a button:hover {
     overflow: hidden;
 }
 
-.tabela-usuario thead {
+.tabela-usuarios thead {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
 }
 
-.tabela-usuario th {
+.tabela-usuarios th {
     padding: 15px;
     text-align: left;
     font-weight: 600;
@@ -124,31 +124,31 @@ form a button:hover {
     letter-spacing: 0.5px;
 }
 
-.tabela-usuario tbody tr {
+.tabela-usuarios tbody tr {
     border-bottom: 1px solid #e0e0e0;
     transition: all 0.3s ease;
 }
 
-.tabela-usuario tbody tr:hover {
+.tabela-usuarios tbody tr:hover {
     background-color: #f0f4ff;
 }
 
-.tabela-usuario tbody tr:last-child {
+.tabela-usuarios tbody tr:last-child {
     border-bottom: none;
 }
 
-.tabela-usuario td {
+.tabela-usuarios td {
     padding: 15px;
     color: #333;
     font-size: 13px;
 }
 
-.tabela-usuario td:nth-child(2) {
+.tabela-usuarios td:nth-child(2) {
     font-weight: 600;
     color: #667eea;
 }
 
-.tabela-usuario td:last-child {
+.tabela-usuarios td:last-child {
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
@@ -237,20 +237,20 @@ form a button:hover {
 
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
-    #eventos {
+    #participantes {
         padding: 20px;
     }
 
-    #eventos h1 {
+    #participantes h1 {
         font-size: 22px;
     }
 
-    .tabela-usuario {
+    .tabela-usuarios {
         font-size: 12px;
     }
 
-    .tabela-usuario th,
-    .tabela-usuario td {
+    .tabela-usuarios th,
+    .tabela-usuarios td {
         padding: 10px;
     }
 

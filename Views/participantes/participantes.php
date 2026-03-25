@@ -21,27 +21,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastrar Participante</title>
+    <link rel="stylesheet" href="styleparticipantes.css">
 </head>
 <body>
 
-    <h1>Cadastrar Participante</h1>
+    <section id="participantes">
+        <h1>Cadastrar Participante</h1>
 
-    <form method="POST">
+        <form method="POST">
 
-        <label>Nome:</label><br>
-        <input type="text" name="nome" required><br><br>
+            <label>Nome:</label><br>
+            <input type="text" name="nome" required><br><br>
 
-        <label>E-mail:</label><br>
-        <input type="email" name="email" required><br><br>
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required><br><br>
 
-        <label>Telefone:</label><br>
-        <input type="text" name="telefone" required><br><br>
-        <button type="submit">Cadastrar</button><br><br>
-        <a href="C:/Turma2/xampp/htdocs/NextLevel/public/index.php"><button>Voltar</button></a>
-        
-
-    </form>
+            <label>Telefone:</label><br>
+            <input type="text" name="telefone" required><br><br>
+            <button type="submit">Cadastrar</button>
+            <a href="/NextLevel/public/index.php"><button type="button">Voltar</button></a>
+        </form>
+    </section>
 
 </body>
 </html>

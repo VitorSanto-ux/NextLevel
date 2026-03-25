@@ -6,6 +6,20 @@ $inscricaoController = new InscricaoController($pdo);
 
 $inscricoes = $inscricaoController->listartodos();
 
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Inscrições</title>
+    <link rel="stylesheet" href="styleinscricoes.css">
+</head>
+<body>
+
+<?php
+
 echo "<section id='inscricoes'>";
 
 echo "<h1>Gerenciamento de Inscrições</h1>";
@@ -51,6 +65,11 @@ if (empty($inscricoes)) {
 
     echo "</tbody>";
     echo "</table>";
+    echo "<br>";
+    echo "<a href='/NextLevel/public/index.php' class='cadastro'>Voltar</a>";
     echo "</section>";
 }
 ?>
+
+</body>
+</html>

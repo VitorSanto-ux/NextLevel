@@ -1,0 +1,72 @@
+/* Estilos para evento lotado e usuário já inscrito */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2d2f65 0%, #535ac8 100%);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-status {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(8px);
+    border-radius: 16px;
+    padding: 28px;
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.container-status h1 {
+    margin-bottom: 14px;
+    font-size: 34px;
+    letter-spacing: 0.8px;
+}
+
+.container-status p {
+    font-size: 18px;
+    line-height: 1.55;
+    color: #e7eafc;
+    margin-bottom: 20px;
+}
+
+.btn-back {
+    display: inline-block;
+    background: linear-gradient(135deg, #f56a4f 0%, #ffaf73 100%);
+    color: #1c1b25;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-back:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 640px) {
+    .container-status {
+        padding: 20px;
+    }
+
+    .container-status h1 {
+        font-size: 28px;
+    }
+
+    .container-status p {
+        font-size: 16px;
+    }
+}

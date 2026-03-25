@@ -24,23 +24,38 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['telefone']
     );
 
-    header("Location: ../public/index.php");
+    header("Location: /NextLevel/public/index.php");
     exit;
 }
 ?>
 
-<h1>Editar Participante</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Participante</title>
+    <link rel="stylesheet" href="styleparticipantes.css">
+</head>
+<body>
 
-<form method="POST">
-    Nome: <br>
-    <input type="text" name="nome" value="<?= $participante['nome'] ?>" required><br><br>
+<section id="participantes">
+    <h1>Editar Participante</h1>
 
-    Email: <br>
-    <input type="email" name="email" value="<?= $participante['email'] ?>" required><br><br>
+    <form method="POST">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" value="<?= $participante['nome'] ?>" required><br><br>
 
-    Telefone: <br>
-    <input type="text" name="telefone" value="<?= $participante['telefone'] ?>"><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" value="<?= $participante['email'] ?>" required><br><br>
 
-    <button type="submit">Atualizar</button>
-    <a href="../public/index.php" class="btn-voltar">Voltar</a>
-</form>
+        <label>Telefone:</label><br>
+        <input type="text" name="telefone" value="<?= $participante['telefone'] ?>"><br><br>
+
+        <button type="submit">Atualizar</button>
+        <a href="/NextLevel/public/index.php"><button type="button">Voltar</button></a>
+    </form>
+</section>
+
+</body>
+</html>

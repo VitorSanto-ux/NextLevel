@@ -27,32 +27,47 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_POST['maximo_participantes']
     );
 
-    header("Location: ../public/index.php");
+    header("Location: /NextLevel/public/index.php");
     exit;
 }
 ?>
 
-<h1>Editar Eventos</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Eventos</title>
+    <link rel="stylesheet" href="styleeventos.css">
+</head>
+<body>
 
-<form method="POST">
-    Nome: <br>
-    <input type="text" name="nome" value="<?= $evento['nome'] ?>" required><br><br>
+<section id="eventos">
+    <h1>Editar Eventos</h1>
 
-    Descriçâo: <br>
-    <input type="text" name="descricao" value="<?= $evento['descricao'] ?>" required><br><br>
+    <form method="POST">
+        <label>Nome:</label><br>
+        <input type="text" name="nome" value="<?= $evento['nome'] ?>" required><br><br>
 
-    Data: <br>
-    <input type="date" name="data" value="<?= $evento['data'] ?>"><br><br>
+        <label>Descrição:</label><br>
+        <input type="text" name="descricao" value="<?= $evento['descricao'] ?>" required><br><br>
 
-    Horário: <br>
-    <input type="time" name="horario" value="<?=  $evento['horario'] ?>"><br><br>
+        <label>Data:</label><br>
+        <input type="date" name="data" value="<?= $evento['data'] ?>"><br><br>
 
-    Local: <br>
-    <input type="text" name="local" value="<?=  $evento['local'] ?>"><br><br>
+        <label>Horário:</label><br>
+        <input type="time" name="horario" value="<?=  $evento['horario'] ?>"><br><br>
 
-    Máximo de Participantes: <br>
-    <input type="number" name="maximo_participantes" value="<?= $evento['maximo_participantes'] ?>">
+        <label>Local:</label><br>
+        <input type="text" name="local" value="<?=  $evento['local'] ?>"><br><br>
 
-    <button type="submit">Atualizar</button>
-    <a href="../public/index.php" class="btn-voltar">Voltar</a>
-</form>
+        <label>Máximo de Participantes:</label><br>
+        <input type="number" name="maximo_participantes" value="<?= $evento['maximo_participantes'] ?>"><br><br>
+
+        <button type="submit">Atualizar</button>
+        <a href="/NextLevel/public/index.php"><button type="button">Voltar</button></a>
+    </form>
+</section>
+
+</body>
+</html>

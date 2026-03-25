@@ -24,22 +24,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // ✅ ordem correta
     $inscricaoController->editar($evento_id, $participante_id, $id);
 
-    header("Location: ../public/index.php");
+    header("Location: /NextLevel/public/index.php");
     exit;
 }
 ?>
 
-<h1>Editar Inscrição</h1>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Inscrição</title>
+    <link rel="stylesheet" href="styleinscricoes.css">
+</head>
+<body>
 
-<form method="POST">
+<section id="inscricoes">
+    <h1>Editar Inscrição</h1>
 
-    Evento ID:<br>
-    <input type="number" name="evento_id" value="<?= $inscricao['evento_id'] ?>" required><br><br>
+    <form method="POST">
 
-    Participante ID:<br>
-    <input type="number" name="participante_id" value="<?= $inscricao['participante_id'] ?>" required><br><br>
+        <label>Evento ID:</label><br>
+        <input type="number" name="evento_id" value="<?= $inscricao['evento_id'] ?>" required><br><br>
 
-    <button type="submit">Atualizar</button>
-    <a href="../public/index.php">Voltar</a>
+        <label>Participante ID:</label><br>
+        <input type="number" name="participante_id" value="<?= $inscricao['participante_id'] ?>" required><br><br>
 
-</form>
+        <button type="submit">Atualizar</button>
+        <a href="/NextLevel/public/index.php"><button type="button">Voltar</button></a>
+
+    </form>
+</section>
+
+</body>
+</html>

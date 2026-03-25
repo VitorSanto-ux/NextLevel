@@ -22,7 +22,7 @@
                         <li><a href="/NextLevel/Views/inscricoes/inscricoes.php">Inscrições</a></li>
                         <li><a href="/NextLevel/Views/participantes/listar.php">Lista de participantes</a></li>
                         <li><a href="/NextLevel/Views/eventos/listareventos.php">Lista de eventos</a></li>
-                        <li><a href="/NextLevel/Views/inscricoes/listarinscricoes.php">Lista de inscrições</a></li>
+                        <li><a href="/NextLevel/Views/inscricoes/listarincricoes.php">Lista de inscrições</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                     </ul>
                 </nav>
